@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  z-index: 999;
+}
+
+.nav-logo {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.toggle-container {
+  position: relative;
+  margin-left: 40px;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.toggle-switcher {
+  position: absolute;
+  top: 5.5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.6s;
+}
+
+.darkmode {
+  background-color: #252553;
+  color: yellow;
+}
+
+.darkmode.toggle-container {
+  background-color: yellow;
+}
+
+.darkmode.toggle-switcher {
+  background-color: #252553;
+  left: 5px;
+}
+
+.lightmode {
+  background-color: rgb(84, 84, 145);
+  color: deepskyblue;
+}
+
+.lightmode.toggle-container {
+  background-color: deepskyblue;
+}
+
+.lightmode.toggle-switcher {
+  background-color: rgb(84, 84, 145);
+  left: 45px;
+}

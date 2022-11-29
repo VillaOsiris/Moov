@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* backgrounds */
+  --bg-primary: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  --bg-secondary: linear-gradient(to left, #1cb5e0, #000046);
+
+  /* main colors */
+  --clr-primary: hsl(56, 100%, 50%);
+  --clr-secondary: #1cb5e0;
+
+  --clr-white: #fff;
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+
+  /* typography */
+  --txt-xl: 3.8rem;
+  --txt-l: 3.052rem;
+  --txt-m: 2.441rem;
+  --txt-s: 1.953rem;
+  --txt-xs: 1.563rem;
+  --txt-xxs: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*10px*/
 }
