@@ -1,0 +1,13 @@
+.container--darkmode {
+  background: #111;
+  color: #fff;
+}
+
+.container--lightmode {
+  background: deepskyblue;
+  color: rgb(84, 84, 145);
+}
+
+.lists {
+  margin-top: -20vh;
+}

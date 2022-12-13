@@ -1,17 +1,42 @@
-import React from "react";
-import axios from "axios";
+import React, { useEffect, useState, useContext } from "react";
+import { ToggleContainer } from "../App";
+import tmdb from "../tmdb";
+import List from "./List";
+import Hero from "./Hero";
+import "../styles/MainStyle.css";
 
 function Main() {
-  const Api =
-    "https://api.themoviedb.org/3/movie/550?api_key=52ca5cfb8dc99b3611152d5057dab45b";
-  // https://api.themoviedb.org/3/genre/movie/list?api_key=52ca5cfb8dc99b3611152d5057dab45b&language=en-US
+  const [MoviesList, setMoviesList] = useState([]);
+  const [HeroData, setHeroData] = useState(null);
+  const { theme } = useContext(ToggleContainer);
 
-  const ApiCall = async () => {
-    const data = await axios.get(Api);
-    console.log(data);
-  };
+  useEffect(() => {
+    const loadData = async () => {
+      let data = await tmdb.getMoviesList();
+      setMoviesList(data);
 
-  return <div onClick={ApiCall}>Main</div>;
+      let trending = data.filter((i) => i.slug === "trending");
+      let random = Math.floor(
+        Math.random() * (trending[0].items.results.length - 1)
+      );
+      let randomMovie = trending[0].items.results[random];
+      let randomTrend = await tmdb.getMovieInfo(randomMovie.id);
+      setHeroData(randomTrend);
+    };
+
+    loadData();
+  }, []);
+
+  return (
+    <div className={theme ? "container--lightmode" : "container--darkmode"}>
+      {HeroData && <Hero item={HeroData} />}
+      <section className="lists">
+        {MoviesList.map((item, key) => (
+          <List key={key} title={item.title} items={item.items} />
+        ))}
+      </section>
+    </div>
+  );
 }
 
 export default Main;

@@ -2,34 +2,6 @@
 
 /*
 =============== 
-Variables
-===============
-*/
-
-:root {
-  /* backgrounds */
-  --bg-primary: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  --bg-secondary: linear-gradient(to left, #1cb5e0, #000046);
-
-  /* main colors */
-  --clr-primary: hsl(56, 100%, 50%);
-  --clr-secondary: #1cb5e0;
-
-  --clr-white: #fff;
-  --clr-black: #222;
-  --transition: all 0.3s linear;
-
-  /* typography */
-  --txt-xl: 3.8rem;
-  --txt-l: 3.052rem;
-  --txt-m: 2.441rem;
-  --txt-s: 1.953rem;
-  --txt-xs: 1.563rem;
-  --txt-xxs: 1rem;
-}
-
-/*
-=============== 
 Global Styles
 ===============
 */

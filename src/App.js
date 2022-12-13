@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
 import Main from "./components/Main";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 export const ToggleContainer = React.createContext();
 
 function App() {
@@ -9,10 +9,11 @@ function App() {
 
   return (
     <ToggleContainer.Provider value={{ theme, setTheme }}>
-      <div className="App">
+      <>
         <NavBar />
         <Main />
-      </div>
+        <Footer />
+      </>
     </ToggleContainer.Provider>
   );
 }
