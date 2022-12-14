@@ -63,3 +63,10 @@
 .list--area:hover .list--arrow_right {
   opacity: 1;
 }
+
+@media (max-width: 960px) {
+  .list--arrow_left,
+  .list--arrow_right {
+    opacity: 1;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/HeroStyle.css";
+import "../styles/HeroStyles.css";
 
 function Hero({ item }) {
   let airingDate = new Date(item.release_date);

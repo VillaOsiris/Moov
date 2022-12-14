@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import "../styles/ListStyle.css";
+import "../styles/ListStyles.css";
 
 function List({ title, items }) {
   const [scrollX, setScrollX] = useState(-400);

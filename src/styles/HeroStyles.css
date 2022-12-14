@@ -71,3 +71,41 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+@media (max-width: 760px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .shadow--horizontal {
+    padding: 4rem 0 0 2rem;
+  }
+
+  .hero--title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .hero--info {
+    font-size: 1.5rem;
+  }
+
+  .hero--rating {
+    margin-right: 0.5rem;
+  }
+  .hero--year {
+    margin-right: 0.5rem;
+  }
+
+  .hero--overview {
+    max-width: 90%;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.7rem 1.4rem;
+    margin: 0 1rem 0 0;
+  }
+}

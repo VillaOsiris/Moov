@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ToggleContainer } from "../App";
-import "../styles/NavBarStyle.css";
+import "../styles/NavBarStyles.css";
 
 function NavBar() {
   const { theme, setTheme } = useContext(ToggleContainer);

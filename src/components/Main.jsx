@@ -3,7 +3,8 @@ import { ToggleContainer } from "../App";
 import tmdb from "../tmdb";
 import List from "./List";
 import Hero from "./Hero";
-import "../styles/MainStyle.css";
+import "../styles/MainStyles.css";
+import Spinner from "./Spinner";
 
 function Main() {
   const [MoviesList, setMoviesList] = useState([]);
@@ -26,6 +27,7 @@ function Main() {
 
     loadData();
   }, []);
+  if (!HeroData) return <Spinner />;
 
   return (
     <div className={theme ? "container--lightmode" : "container--darkmode"}>
