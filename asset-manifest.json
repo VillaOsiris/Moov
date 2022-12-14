@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Moov/static/css/main.3017342e.css",
+    "main.js": "/Moov/static/js/main.89b7dd36.js",
+    "static/media/tmdb.svg": "/Moov/static/media/tmdb.bb8aa703cb92c9aa31fc1e0b17850ed9.svg",
+    "index.html": "/Moov/index.html",
+    "main.3017342e.css.map": "/Moov/static/css/main.3017342e.css.map",
+    "main.89b7dd36.js.map": "/Moov/static/js/main.89b7dd36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3017342e.css",
+    "static/js/main.89b7dd36.js"
+  ]
+}
