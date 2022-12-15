@@ -16,7 +16,7 @@ export default {
     return [
       {
         slug: "trending",
-        title: "Trending Movies",
+        title: "Trending",
         items: await dataFetch("/trending/all/week"),
       },
       {
@@ -26,22 +26,22 @@ export default {
       },
       {
         slug: "action",
-        title: "Action Movies",
+        title: "Action",
         items: await dataFetch("/discover/movie", "28"),
       },
       {
         slug: "comedy",
-        title: "Comedy Movies",
+        title: "Comedy",
         items: await dataFetch("/discover/movie", "35"),
       },
       {
         slug: "horror",
-        title: "Horror Movies",
+        title: "Horror",
         items: await dataFetch("/discover/movie", "27"),
       },
       {
         slug: "drama",
-        title: "Drama Movies",
+        title: "Drama",
         items: await dataFetch("/discover/movie", "10749"),
       },
     ];
