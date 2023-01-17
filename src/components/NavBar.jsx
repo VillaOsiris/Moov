@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ToggleContainer } from "../App";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 import "../styles/NavBarStyles.css";
 
 function NavBar() {
@@ -22,7 +23,9 @@ function NavBar() {
               className={
                 theme ? "lightmode toggle-switcher" : "darkmode toggle-switcher"
               }
-            ></div>
+            >
+              {theme ? <MdDarkMode /> : <MdLightMode />}
+            </div>
           </div>
         </div>
       </nav>

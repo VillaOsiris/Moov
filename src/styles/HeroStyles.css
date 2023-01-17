@@ -59,13 +59,13 @@
 .shadow--vertical {
   width: inherit;
   height: inherit;
-  background: linear-gradient(to top, #111 10%, transparent 90%);
+  background: linear-gradient(to top, #0e0f0f 10%, transparent 90%);
 }
 
 .shadow--horizontal {
   width: inherit;
   height: inherit;
-  background: linear-gradient(to right, #111 30%, transparent 70%);
+  background: linear-gradient(to right, #0e0f0f 30%, transparent 70%);
   padding: 6rem 0 0 3rem;
   display: flex;
   flex-direction: column;

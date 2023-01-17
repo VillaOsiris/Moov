@@ -1,13 +1,20 @@
 .container--darkmode {
-  background: #111;
-  color: #fff;
+  background: #0e0f0f;
+  color: yellow;
 }
 
 .container--lightmode {
-  background: deepskyblue;
-  color: rgb(84, 84, 145);
+  background: #ccc;
+  color: #1e90ff;
 }
 
 .lists {
   margin-top: -20vh;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }

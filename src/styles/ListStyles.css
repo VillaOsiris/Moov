@@ -3,7 +3,7 @@
 }
 
 .list--title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 0 0 0 1rem;
 }
 
@@ -68,5 +68,11 @@
   .list--arrow_left,
   .list--arrow_right {
     opacity: 1;
+  }
+}
+
+@media (max-width: 425px) {
+  .list--title {
+    font-size: 3rem;
   }
 }
